@@ -1,0 +1,85 @@
+body{
+    background: linear-gradient(180deg, #222222, #000000);
+}
+
+/*首页主图标题*/
+h1#site-title{
+    display: none!important;
+}
+
+/*首页导航栏字重*/
+.menus_items {
+    font-weight: bold;
+}
+
+/*首页主图社交媒体标签*/
+#page-header #site_social_icons {
+    display: none;
+}
+
+/*首页导航栏LOGO*/
+#nav #blog-info .site-icon {
+    height: 24px;
+}
+
+/*首页导航栏背景*/
+#page-header.nav-fixed #nav {
+    background: rgb(0 0 0 / 0%);
+    box-shadow: 0 5px 6px -5px rgb(0 0 0 / 0%);
+    -webkit-box-shadow: 0 5px 6px -5px rgb(0 0 0 / 0%);
+}
+/*子页面导航栏背景*//*子页面菜单文字颜色*/
+#page-header.not-top-img #nav {
+    background: rgb(0 0 0 / 0%);
+    box-shadow: 0 5px 6px -5px rgba(133, 133, 133, 0);
+}
+
+#page-header.not-top-img #nav a,
+#page-header.not-top-img #nav span.site-page,
+#page-header.not-top-img #nav.site-name {
+    color: var(--light-grey);
+    text-shadow: none;
+}
+
+#page-header.nav-fixed #nav a,
+#page-header.nav-fixed #nav span.site-page,
+#page-header.nav-fixed #nav #toggle-menu {
+    color: var(--light-grey);
+    text-shadow: none;
+}
+
+#page-header.nav-fixed #nav a:hover,
+#page-header.nav-fixed #nav span.site-page:hover,
+#page-header.nav-fixed #nav #toggle-menu:hover {
+  color: var(--light-grey);
+}
+
+/* 一级菜单居中 */
+#nav .menus_items {
+    position: absolute !important;
+    width: fit-content !important;
+    left: 50% !important;
+    margin-top: -17px;
+    transform: translateX(-50%) !important;
+}
+/* 子菜单横向展示 */
+#nav .menus_items .menus_item:hover .menus_item_child {
+    display: flex !important;
+}
+/* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */
+.menus_items .menus_item:nth-child(2) .menus_item_child {
+    left: -45px;
+}
+.menus_items .menus_item:nth-child(3) .menus_item_child {
+    left: -45px;
+}
+.menus_items .menus_item:nth-child(4) .menus_item_child {
+    left: -45px;
+}
+/* 子菜单圆角 */
+#nav .menus_items .menus_item .menus_item_child li:first-child {  
+    border-radius: 5px;
+}
+#nav .menus_items .menus_item .menus_item_child li:last-child {  
+    border-radius: 5px;
+}
